@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.main-component{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+  margin: 15px;
+  background-color:bisque;
+  padding: 20px;
+}
+.first{
+  display: flex;
+  gap:1rem;
+  
+}
+.card{
+  border: 1px solid black;
+  width:200px;
+  height:250px;
+  margin: 20px;
+  padding: 10px;
+}
+.container{
+  display: grid;
+  gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+}
+.button-list{
+  display: flex;
+  gap:0.5rem;
+}
+.input-list{
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  margin-left: 50px;
+  gap:0.5rem;
+}
+.last{
+  margin-left: 200px;
+}
+@media only screen and (max-width: 400px){
+  .main-component{
+    width: 100%;
+    gap:0.2rem;
+    font-size: xx-small;
+  }
+}
